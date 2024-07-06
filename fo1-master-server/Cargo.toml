@@ -1,0 +1,21 @@
+[package]
+name = "fo1-master-server"
+version = "0.1.0"
+edition = "2021"
+authors = ["xNyaDev <xnyadev@pm.me>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/gaycoderprincess/FlatOutOnlinePlay/"
+homepage = "https://github.com/gaycoderprincess/FlatOutOnlinePlay/"
+publish = false
+
+[dependencies]
+axum = "0.7.5"
+tokio = { version = "1.38.0", features = ["full"] }
+tokio-stream = { version = "0.1.15", features = ["time"] }
+serde = { version = "1.0.203", features = ["derive"] }
+xnya_utils = { git = "https://github.com/xNyaDev/game-mods.git" }
+
+[build-dependencies]
+documented = "0.5.0"
+serde = { version = "1.0.203", features = ["derive"] }
+xnya_utils = { git = "https://github.com/xNyaDev/game-mods.git" }
