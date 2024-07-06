@@ -2,9 +2,12 @@
 # enjoy, nya~ :3
 
 [main]
-server_ip = "127.0.0.1"		# Server host's IP address
-port_game = 23756		# Gameplay port, needs to be forwarded for the server host!
-port_lobby = 23757		# Lobby broadcast port, needs to be forwarded for the server host!
+masterserver_ip = "141.148.240.20"	# Master server IP address, used to establish a list of lobbies
+server_ip = ""				# Server host's IP address, leave empty to use the master server
+port_game = 23756			# Gameplay port, needs to be forwarded for the server host!
+port_lobby = 23757			# Lobby broadcast port, needs to be forwarded for the server host!
+port_masterserver = 23755		# Masterserver port, leave this as 23755 unless you're using a different masterserver!!
 
 [logging]
-log_lobby_search = false	# Logs connection attempts when searching for lobbies
+log_lobby_search = false		# Logs connection attempts when searching for lobbies
+log_master_server = false		# Logs communication with the master server
